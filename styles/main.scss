@@ -255,20 +255,5 @@ button#button2-up {
 	all: unset;
 }
 
-@media only screen and (max-width: 1600px) {
-	.btn-up-down {
-		left: 55%;
-	}
-}
 
-@media only screen and (max-width: 900px) {
-	.btn-up-down {
-		left: 50%;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.btn-up-down {
-		left: 63%;
-	}
-}
+@media only screen and (max-width:1600px){.btn-up-down{left:55%}}@media only screen and (max-width:900px){.btn-up-down{left:50%}}@media only screen and (max-width:768px){.btn-up-down{left:55%}p.absolute-center{font-size:8px;line-height:10px}button.btn.btn-primary{margin-top:10px;width:100%}button.btn.btn-outline-secondary{width:100%}p.odjem,p.odjem span{font-size:22px}}
