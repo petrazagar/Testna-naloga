@@ -1,207 +1,154 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Primerjalnik</title>
-    <link href="https://fonts.googleapis.com/css?family=Helvetica:300,400,400i,600,700,800,900" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Testna naloga" />
-    <meta name="keywords" content="naloga" />
-    <meta name="author" content="petrazagar" />
-    <link rel="shortcut icon" href="favicon.ico">
-
-    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-
-    <link rel="stylesheet" href="styles/main.min.css" type="text/css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-
-  </head>
-
-  <body>
-
-    <button class="open-button btn btn-dark">ODPRI POPUP</button>
-
-
-<div class="popup none" id="myPopup">
-<div class="popup-content">
-<div class="header">
-   <h1>Pomočnik izračuna</h1>
-</div>
-
-<div class="main-content">
-<h2>Število oseb</h2>
-<div class="container">
-  <div class="row">
-  <div class="col-md-1 col-xs-4 embed-responsive embed-responsive-1by1 mini-col">
-  <div class="embed-responsive-item center-img rounded lg-box-1"><img class="icons" src="images/icon-01.png" alt="icon"></div>
-  </div>
-    <div class="col-md-1 col-xs-4 embed-responsive embed-responsive-1by1 mini-col">
-    <div class="embed-responsive-item center-img rounded lg-box-1"><img class="icons" src="images/icon-01.png" alt="icon"></div>
-    </div>
-    <div class="col-md-1 col-xs-4 embed-responsive embed-responsive-1by1 mini-col">
-    <div class="embed-responsive-item center-img rounded lg-box-1"><img class="icons" src="images/icon-01.png" alt="icon"></div>
-    </div>
-    <div class="col-md-1 col-xs-4 embed-responsive embed-responsive-1by1 mini-col">
-    <div class="embed-responsive-item center-img rounded lg-box-1"><img class="icons" src="images/icon-01.png" alt="icon"></div>
-    </div>
-    <div class="col-md-1 col-xs-4 embed-responsive embed-responsive-1by1 mini-col">
-    <div class="embed-responsive-item center-img rounded lg-box-1"><img class="icons" src="images/icon-01.png" alt="icon"></div>
-    </div>
-    <div class="col-md-7 col-xs-12">
-
-    </div>
-  </div>
-</div>
-
-
-<h2 style="margin-top:20px;">Opcije opreme</h2>
-<div class="container">
-  <div class="row">
-
-    <div class="col8 embed-responsive embed-responsive-1by1">
-    <div class="embed-responsive-item center-img rounded lg-box-2">
-      <p class="absolute-center">Ogrevanje prostorov</p>
-  </div>
-  </div>
-
-  <div class="col8 embed-responsive embed-responsive-1by1">
-  <div class="embed-responsive-item center-img rounded lg-box-2">
-      <p class="absolute-center">Ogrevanje sanitarne vode</p>
-  </div>
-  </div>
-
-  <div class="col8 embed-responsive embed-responsive-1by1">
-  <div class="embed-responsive-item center-img rounded lg-box-2">
-      <p class="absolute-center">Kuhanje</p>
-  </div>
-  </div>
-
-  <div class="col8 embed-responsive embed-responsive-1by1">
-  <div class="embed-responsive-item center-img rounded lg-box-2">
-      <p class="absolute-center">Razsvetljava</p>
-  </div>
-  </div>
-
-  <div class="col8 embed-responsive embed-responsive-1by1">
-  <div class="embed-responsive-item center-img rounded lg-box-2">
-      <p class="absolute-center">Hladilniki in kombinirani hladilniki</p>
-  </div>
-  </div>
-
-  <div class="col8 embed-responsive embed-responsive-1by1">
-  <div class="embed-responsive-item center-img rounded lg-box-2">
-      <p class="absolute-center">Zmrzovalne skrinje in omare</p>
-  </div>
-  </div>
-
-  <div class="col8 embed-responsive embed-responsive-1by1">
-  <div class="embed-responsive-item center-img rounded lg-box-2">
-      <p class="absolute-center">Pralni in pralno sušilni stroji (za pranje)</p>
-  </div>
-  </div>
-
-  <div class="col8 embed-responsive embed-responsive-1by1">
-  <div class="embed-responsive-item center-img rounded lg-box-2">
-      <p class="absolute-center">Pralni in pralno sušilni stroji (za sušenje)</p>
-  </div>
-  </div>
-
-  </div>
-</div>
-
-
-<h2 style="margin-top:20px;">Razmerje porabe med dnevom in nočjo</h2>
-<div class="container">
-  <div class="row">
-  <div class="col-md-3 col-xs-4">
-<label>Dan (VT) [%]</label>
-<div>
-<input type="text" value="50 %" id="percent">
-<div class="btn-up-down">
-	<button id="button-up" onClick="changeValue();"><i class="fas fa-caret-up"></i></button>
-	<button id="button-down" onClick="changeValue(false);"><i class="fas fa-caret-down"></i></button>
-</div>
-</div>
-
-</div>
-
-    <div class="col-md-3 col-xs-4">
-      <label>Noč (MT) [%]</label>
-      <div>
-        <input type="number" class="quantity" name="quantity" value="50" min="1" max="100">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Primerjalnik</title>
+      <link href="https://fonts.googleapis.com/css?family=Helvetica:300,400,400i,600,700,800,900" rel="stylesheet" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <meta name="description" content="Testna naloga" />
+      <meta name="keywords" content="naloga" />
+      <meta name="author" content="petrazagar" />
+      <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+      <link rel="stylesheet" href="styles/main.min.css" type="text/css">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   </head>
+   <body>
+      <div style="padding:33px;" class="container">
+         <div class="row">
+            <div class="col text-center">
+               <button class="open-button btn btn-dark">ODPRI POPUP</button>
+            </div>
+         </div>
       </div>
-    </div>
-    <div class="col-md-6 col-xs-4"></div>
-    </div>
-  </div>
-
-
-  <div  style="margin-top:30px;" class="container">
-    <div class="row">
-    <div class="col-md-3 col-xs-4">
-  <h2>Predviden letni odjem (MT)</h2>
-  <div>
-    <p class="odjem">729<span>kWh</span></p>
-  </div>
-  </div>
-
-      <div class="col-md-3 col-xs-4">
-        <h2>Predviden letni odjem (VT)</h2>
-        <div>
-          <p class="odjem">729<span>kWh</span></p>
-        </div>
+      <div class="popup none" id="myPopup">
+      <div class="popup-content">
+         <div class="header">
+            <h1>Pomočnik izračuna</h1>
+         </div>
+         <div class="main-content">
+            <h2>Število oseb</h2>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-1 col-xs-4 embed-responsive embed-responsive-1by1 mini-col">
+                     <div class="embed-responsive-item center-img rounded lg-box-1"><img class="icons" src="images/icon-01.png" alt="icon"></div>
+                  </div>
+                  <div class="col-md-1 col-xs-4 embed-responsive embed-responsive-1by1 mini-col">
+                     <div class="embed-responsive-item center-img rounded lg-box-1"><img class="icons" src="images/icon-01.png" alt="icon"></div>
+                  </div>
+                  <div class="col-md-1 col-xs-4 embed-responsive embed-responsive-1by1 mini-col">
+                     <div class="embed-responsive-item center-img rounded lg-box-1"><img class="icons" src="images/icon-01.png" alt="icon"></div>
+                  </div>
+                  <div class="col-md-1 col-xs-4 embed-responsive embed-responsive-1by1 mini-col">
+                     <div class="embed-responsive-item center-img rounded lg-box-1"><img class="icons" src="images/icon-01.png" alt="icon"></div>
+                  </div>
+                  <div class="col-md-1 col-xs-4 embed-responsive embed-responsive-1by1 mini-col">
+                     <div class="embed-responsive-item center-img rounded lg-box-1"><img class="icons" src="images/icon-01.png" alt="icon"></div>
+                  </div>
+                  <div class="col-md-7 col-xs-12">
+                  </div>
+               </div>
+            </div>
+            <h2 style="margin-top:20px;">Opcije opreme</h2>
+            <div class="container">
+               <div class="row">
+                  <div class="col8 embed-responsive embed-responsive-1by1">
+                     <div class="embed-responsive-item center-img rounded lg-box-2">
+                        <p class="absolute-center">Ogrevanje prostorov</p>
+                     </div>
+                  </div>
+                  <div class="col8 embed-responsive embed-responsive-1by1">
+                     <div class="embed-responsive-item center-img rounded lg-box-2">
+                        <p class="absolute-center">Ogrevanje sanitarne vode</p>
+                     </div>
+                  </div>
+                  <div class="col8 embed-responsive embed-responsive-1by1">
+                     <div class="embed-responsive-item center-img rounded lg-box-2">
+                        <p class="absolute-center">Kuhanje</p>
+                     </div>
+                  </div>
+                  <div class="col8 embed-responsive embed-responsive-1by1">
+                     <div class="embed-responsive-item center-img rounded lg-box-2">
+                        <p class="absolute-center">Razsvetljava</p>
+                     </div>
+                  </div>
+                  <div class="col8 embed-responsive embed-responsive-1by1">
+                     <div class="embed-responsive-item center-img rounded lg-box-2">
+                        <p class="absolute-center">Hladilniki in kombinirani hladilniki</p>
+                     </div>
+                  </div>
+                  <div class="col8 embed-responsive embed-responsive-1by1">
+                     <div class="embed-responsive-item center-img rounded lg-box-2">
+                        <p class="absolute-center">Zmrzovalne skrinje in omare</p>
+                     </div>
+                  </div>
+                  <div class="col8 embed-responsive embed-responsive-1by1">
+                     <div class="embed-responsive-item center-img rounded lg-box-2">
+                        <p class="absolute-center">Pralni in pralno sušilni stroji (za pranje)</p>
+                     </div>
+                  </div>
+                  <div class="col8 embed-responsive embed-responsive-1by1">
+                     <div class="embed-responsive-item center-img rounded lg-box-2">
+                        <p class="absolute-center">Pralni in pralno sušilni stroji (za sušenje)</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <h2 style="margin-top:20px;">Razmerje porabe med dnevom in nočjo</h2>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-3 col-xs-4">
+                     <label>Dan (VT) [%]</label>
+                     <div>
+                        <input type="text" value="50 %" id="percent2">
+                        <div class="btn-up-down">
+                           <button id="button2-up" onClick="changeValue(true, 2);"><i class="fas fa-caret-up"></i></button>
+                           <button id="button2-down" onClick="changeValue(false, 2);"><i class="fas fa-caret-down"></i></button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-xs-4">
+                     <label>Noč (MT) [%]</label>
+                     <div>
+                        <input type="text" value="50 %" id="percent1">
+                        <div class="btn-up-down">
+                           <button id="button1-up" onClick="changeValue(true, 1);"><i class="fas fa-caret-up"></i></button>
+                           <button id="button1-down" onClick="changeValue(false, 1);"><i class="fas fa-caret-down"></i></button>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-xs-4"></div>
+                  </div>
+               </div>
+               <div  style="margin-top:30px;" class="container">
+                  <div class="row">
+                     <div class="col-md-3 col-xs-4">
+                        <h2>Predviden letni odjem (MT)</h2>
+                        <div>
+                           <p class="odjem">729<span>kWh</span></p>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-xs-4">
+                        <h2>Predviden letni odjem (VT)</h2>
+                        <div>
+                           <p class="odjem">729<span>kWh</span></p>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-xs-4"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="popup-footer">
+               <div class="buttons my-auto">
+                  <button type="button" class="btn btn-outline-secondary">Zapri</button>
+                  <button type="button" class="btn btn-primary">Uporabi</button>
+               </div>
+            </div>
+         </div>
       </div>
-      <div class="col-md-6 col-xs-4"></div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-</div>
-
-<div class="popup-footer">
-  <div class="buttons my-auto">
-  <button type="button" class="btn btn-outline-secondary">Zapri</button>
-  <button type="button" class="btn btn-primary">Uporabi</button>
-</div>
-</div>
-
-</div>
-</div>
-  </body>
-
-
-
-
-
-<footer>
-  <script>
-
-  let upValue = document.querySelector('#button-up');
-  let downValue = document.querySelector('#button-down');
-
-  var changeValue = function(positive = true){
-  	let myValue = document.querySelector('#percent').value;
-  	myValue = parseInt(myValue);
-  	if(myValue > 0 && myValue < 100){
-  		if(positive) myValue += 1;
-  		else myValue -= 1;
-  	}
-  	//console.log(myValue);
-  	document.querySelector('#percent').value = myValue+' %';
-  }
-
-  </script>
-</footer>
-
+   </body>
+   <footer>
+   </footer>
 </html>
